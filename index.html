@@ -9,9 +9,41 @@
     <script src="https://kit.fontawesome.com/38719968ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/estilos.css">
     <title>Primer Proyecto</title>
+
+    <!-- stylos -->
+    <link rel="stylesheet" href="src/css/estilos.css">
+
+    <!-- fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!--icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <!-- navegatsion -->
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <i class="fab fa-avianex"></i> VIAJES H&L
+                </div>
+                <!-- ITEMS -->
+                <ul id="menubar">
+                    <li onclick="verMenu()"><a href="#"><i class="fas fa-home sp"></i> Inicio</a></li>
+                    <li onclick="verMenu()"><a href="#"><i class="fas fa-business-time sp"></i> Servicios</a></li>
+                    <li onclick="verMenu()"><a href="#"><i class="fas fa-users sp"></i> Nosotros</a></li>
+                    <li onclick="verMenu()"><a href="#"><i class="fa fa-id-card sp"></i> Contacto</a></li>
+                </ul>
+                <!-- menu toggle -->
+                <div id="toggleMenu" class="toggle-menu" onclick="verMenu()">
+                    <i class="fas fa-align-justify fa-2x"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section id="hero">
         <div>
             <h2 class="hero-title">Disfruta de la <span>ciudad</span></h2>
@@ -37,7 +69,7 @@
                 </div>
                 <div class="card-title">
                     <h3>Desing</h3>
-                    <p>Diseñamos una página a tu medida,  conforme a tus necesidades o las de tu empresa</p>
+                    <p>Diseñamos una página a tu medida, conforme a tus necesidades o las de tu empresa</p>
                 </div>
             </div>
             <div class="card">
@@ -63,6 +95,20 @@
     <section id="prox">
         <h2>Proximamente</h2>
     </section>
+
+
+
+    <!-- script -->
+    <script>
+        function verMenu() {
+            let menu = document.getElementById("menubar");
+            if (menu.style.transform === "scale(0)") {
+                menu.style.transform = "scale(1)";
+            } else {
+                menu.style.transform = "scale(0)";
+            }
+        }
+    </script>
 </body>
 
 </html>
