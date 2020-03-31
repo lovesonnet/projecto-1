@@ -3,3 +3,115 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --negro:rgb(36, 34, 34);
+    --azul:rgb(26, 161, 179);
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* navegation */
+nav{
+    background:var(--negro);
+}
+nav .container{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-family:'Righteous',sans-serif;
+    letter-spacing: 3px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+.fa-avianex{
+    transition: all .8s linear;
+}
+.logo:hover .fa-avianex{
+    transform: rotate(200deg);
+}
+.logo:hover{
+    color:var(--azul);
+}
+/* ITEMS */
+nav .container ul{
+    display: flex;
+    list-style: none;
+}
+nav .container ul li{
+    margin-left: 20px;
+}
+nav .container ul li a{
+    display: block;
+    text-decoration: none;
+    font-family: 'roboto',sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+    opacity: .6;
+    transition: all .3s linear;
+    height: 30px;
+}
+nav .container ul li a:hover{
+    opacity: 1;
+    border-bottom: 4px solid var(--azul);
+}
+/* toggle menu */
+.toggle-menu{
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+/* responsive menu */
+@media screen and (max-width:810px){
+    .logo{
+        color: var(--azul);
+    }
+    .toggle-menu{
+        display: block;
+    }
+    nav .container ul{
+        position: fixed;
+        top: 65px;
+        left: 0;
+        background: var(--negro);
+        width: 60vw;
+        height: 90vh;
+        flex-direction: column;
+        padding:40px ;
+        transition: all .5s linear;
+        transform: scale(0);
+    }
+    nav .container ul li{
+        margin-bottom: 30px;
+    }
+    
+    nav .container ul li a{
+        font-size: 25px;
+        letter-spacing: 2px;
+        opacity: 1;
+
+    }
+    nav .container ul li a:hover{
+        border: none;
+    }
+    .sp{
+        margin-right:50px ;
+    }
+}
+@media screen and (max-width:600px){
+    .sp{
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width:450px){
+    .sp{
+        display: none;
+    }
+}

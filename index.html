@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer Proyecto</title>
+
+    <!-- stylos -->
+    <link rel="stylesheet" href="src/css/estilos.css">
+
+    <!-- fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!--icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
+
 <body>
-<<<<<<< HEAD
-    <section id="hero">
-        
-    </section>
-=======
-    <h1>Hola</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, accusamus vero numquam ad similique commodi hic deserunt omnis repellat animi nam harum laboriosam ut consequatur modi rem eos suscipit magni qui nisi saepe, corrupti quisquam! Ut, debitis in architecto officiis eius deserunt odio. Culpa odio, dolor dignissimos quisquam amet, magni, ipsa esse magnam omnis voluptas tempora totam voluptates provident iste excepturi earum quam maiores unde dicta! Alias ea ipsa sapiente iste ab deleniti provident ex necessitatibus? Inventore ratione voluptatum iste ipsam reprehenderit distinctio officia illo est temporibus quidem sapiente id, nostrum aut molestiae. Numquam explicabo ea doloremque distinctio, sit reprehenderit!</p>
-    <div class="container">
-        <h1>hola hermano</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nostrum deserunt quo. Aliquid veniam quisquam, illo ut quibusdam enim earum autem? Reiciendis, minus. Ipsum, molestias ipsam mollitia assumenda corporis earum!
-        </p>
-    </div>
-    <h1>prueba</h1>
->>>>>>> 4c3ece37e901cf60ef5c0cc69f8ea39ad2170a34
+    <header>
+        <!-- navegatsion -->
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <i class="fab fa-avianex"></i> VIAJES H&L
+                </div>
+                <!-- ITEMS -->
+                <ul id="menubar">
+                    <li onclick="verMenu()"><a href="#"><i class="fas fa-home sp"></i> Inicio</a></li>
+                    <li onclick="verMenu()"><a href="#"><i class="fas fa-business-time sp"></i> Servicios</a></li>
+                    <li onclick="verMenu()"><a href="#"><i class="fas fa-users sp"></i> Nosotros</a></li>
+                    <li onclick="verMenu()"><a href="#"><i class="fa fa-id-card sp"></i> Contacto</a></li>
+                </ul>
+                <!-- menu toggle -->
+                <div id="toggleMenu" class="toggle-menu" onclick="verMenu()">
+                    <i class="fas fa-align-justify fa-2x"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- script -->
+    <script>
+        function verMenu(){
+            let menu = document.getElementById("menubar");
+            if(menu.style.transform === "scale(0)"){
+                menu.style.transform = "scale(1)";
+            }else{
+                menu.style.transform = "scale(0)";
+            }
+        }
+    </script>
 </body>
+
 </html>
