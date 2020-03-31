@@ -36,11 +36,11 @@ nav .container {
     cursor: pointer;
 }
 
-.fa-avianex {
+.fa-code {
     transition: all .8s linear;
 }
 
-.logo:hover .fa-avianex {
+.logo:hover .fa-code {
     transform: rotate(200deg);
 }
 
