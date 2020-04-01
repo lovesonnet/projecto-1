@@ -313,6 +313,7 @@ nav .container ul li a:hover {
 }
 
 @media screen and (max-width:768px) {
+    /* prueba*/
     #hero {
         background-image: url(../../img/build_tab.jpg);
         background-repeat: no-repeat;
