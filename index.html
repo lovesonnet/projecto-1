@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&family=Indie+Flower&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&family=Indie+Flower&display=swap"
+        rel="stylesheet">
 
     <!--icons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
@@ -30,21 +31,31 @@
         <nav>
             <div class="container">
                 <div class="logo">
-                    <i class="fa fa-code"></i>  CODE H&L 
+                    <i class="fa fa-code"></i> CODE H&L
                 </div>
                 <!-- ITEMS -->
                 <ul id="menubar">
-                    <li onclick="verMenu()"><a href="#"><i class="fas fa-home sp"></i> Inicio</a></li>
-                    <li onclick="verMenu()"><a href="#"><i class="fas fa-business-time sp"></i> Servicios</a></li>
-                    <li onclick="verMenu()"><a href="#"><i class="fas fa-users sp"></i> Nosotros</a></li>
-                    <li onclick="verMenu()"><a href="#"><i class="fa fa-id-card sp"></i> Contacto</a></li>
+                    <li><a href="#"><i class="fas fa-home sp"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-business-time sp"></i> Servicios</a></li>
+                    <li><a href="#"><i class="fas fa-users sp"></i> Nosotros</a></li>
+                    <li><a href="#"><i class="fa fa-id-card sp"></i> Contacto</a></li>
                 </ul>
                 <!-- menu toggle -->
-                <div id="toggleMenu" class="toggle-menu" onclick="verMenu()">
+                <div id="toggleMenu" class="toggle-menu">
                     <i class="fas fa-align-justify fa-2x"></i>
                 </div>
             </div>
         </nav>
+        <!-- nav responsive -->
+        <div id="navResponsive" class="nav-responsive">
+            <ul id="items">
+                <li><a href="#"><i class="fas fa-home sp"></i> Inicio</a></li>
+                <li><a href="#"><i class="fas fa-business-time sp"></i> Servicios</a></li>
+                <li><a href="#"><i class="fas fa-users sp"></i> Nosotros</a></li>
+                <li><a href="#"><i class="fa fa-id-card sp"></i> Contacto</a></li>
+            </ul>
+        </div>
+
     </header>
     <!-- banner -->
     <section id="hero">
@@ -102,9 +113,11 @@
         <div>
             <h1><i class="fa fa-user-circle" aria-hidden="true"></i> Acerca de Nosotros</h1>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque animi explicabo rerum eos sit vitae libero, molestias necessitatibus placeat nulla blanditiis tempora possimus optio, sequi molestiae deserunt eum sint quibusdam?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque animi explicabo rerum eos sit vitae
+                libero, molestias necessitatibus placeat nulla blanditiis tempora possimus optio, sequi molestiae
+                deserunt eum sint quibusdam?
             </p>
-            
+
             <button class="btn btn-nosotros">Contactanos</button>
         </div>
     </section>

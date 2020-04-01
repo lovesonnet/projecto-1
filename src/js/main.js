@@ -1,8 +1,17 @@
-function verMenu() {
-    let menu = document.getElementById("menubar");
-    if (menu.style.transform === "scale(0)") {
-        menu.style.transform = "scale(1)";
-    } else {
-        menu.style.transform = "scale(0)";
+////menu desplegable 
+let toggleMenu = document.querySelector("#toggleMenu");
+let menu = document.querySelector("#navResponsive");
+let items = document.querySelectorAll("#items");
+
+function verMenu(){
+    if(menu.style.display === "block"){
+        menu.style.display = "none";
+    }else{
+        menu.style.display = "block";
     }
 }
+toggleMenu.addEventListener("click",verMenu);
+
+items.forEach(function(link){
+    link.addEventListener("click",verMenu);
+})
