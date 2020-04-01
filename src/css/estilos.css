@@ -453,6 +453,7 @@ nav .container ul li a:hover {
         padding: 7px;
         font-family: 'roboto',sans-serif;
     }
+<<<<<<< HEAD
 }
 
 * {
@@ -647,4 +648,6 @@ nav .container ul li a:hover {
     .nosotros div{
         align-items: center;
     }
+=======
+>>>>>>> c346b7c8cbc6b86420e740dbf5e52ff5fca7df3a
 }
