@@ -18,6 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+
     <!--icons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
@@ -32,29 +35,42 @@
                 </div>
                 <!-- ITEMS -->
                 <ul id="menubar">
-                    <li onclick="verMenu()"><a href="#"><i class="fas fa-home sp"></i> Inicio</a></li>
-                    <li onclick="verMenu()"><a href="#"><i class="fas fa-business-time sp"></i> Servicios</a></li>
-                    <li onclick="verMenu()"><a href="#"><i class="fas fa-users sp"></i> Nosotros</a></li>
-                    <li onclick="verMenu()"><a href="#"><i class="fa fa-id-card sp"></i> Contacto</a></li>
+                    <li><a href="#"><i class="fas fa-home sp"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-business-time sp"></i> Servicios</a></li>
+                    <li><a href="#"><i class="fas fa-users sp"></i> Nosotros</a></li>
+                    <li><a href="#"><i class="fa fa-id-card sp"></i> Contacto</a></li>
                 </ul>
                 <!-- menu toggle -->
-                <div id="toggleMenu" class="toggle-menu" onclick="verMenu()">
+                <div id="toggleMenu" class="toggle-menu">
                     <i class="fas fa-align-justify fa-2x"></i>
                 </div>
             </div>
         </nav>
+        <!-- nav responsive -->
+        <div id="navResponsive" class="nav-responsive">
+            <ul id="items">
+                <li><a href="#"><i class="fas fa-home sp"></i> Inicio</a></li>
+                <li><a href="#"><i class="fas fa-business-time sp"></i> Servicios</a></li>
+                <li><a href="#"><i class="fas fa-users sp"></i> Nosotros</a></li>
+                <li><a href="#"><i class="fa fa-id-card sp"></i> Contacto</a></li>
+            </ul>
+        </div>
+
     </header>
+    <!-- banner -->
     <section id="hero">
         <div>
             <h2 class="hero-title">Disfruta de la <span>ciudad</span></h2>
             <a href="#" class="hero-btn_hover">Ver más</a>
         </div>
     </section>
+    <!-- services section -->
     <section class="service">
         <div class="service-card">
+            <!-- cards -->
             <div class="card">
                 <div class="icon">
-                    <i class="fas fa-code"></i>
+                    <i class="fas fa-code hero-icon"></i>
                 </div>
                 <div class="card-title">
                     <h3>FrontEnd</h3>
@@ -65,7 +81,7 @@
             </div>
             <div class="card">
                 <div class="icon">
-                    <i class="fas fa-layer-group"></i>
+                    <i class="fas fa-layer-group hero-icon"></i>
                 </div>
                 <div class="card-title">
                     <h3>Desing</h3>
@@ -74,7 +90,7 @@
             </div>
             <div class="card">
                 <div class="icon">
-                    <i class="fas fa-database"></i>
+                    <i class="fas fa-database hero-icon"></i>
                 </div>
                 <div class="card-title">
                     <h3>Data Bases</h3>
@@ -83,7 +99,7 @@
             </div>
             <div class="card">
                 <div class="icon">
-                    <i class="fas fa-book-open"></i>
+                    <i class="fas fa-book-open hero-icon"></i>
                 </div>
                 <div class="card-title">
                     <h3>Training</h3>
@@ -92,20 +108,43 @@
             </div>
         </div>
     </section>
+<<<<<<< HEAD
+=======
+    <!-- section nosotros -->
+    <section class="nosotros" id="acercaDe">
+        <div>
+            <h1><i class="fa fa-user-circle" aria-hidden="true"></i> Acerca de Nosotros</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque animi explicabo rerum eos sit vitae
+                libero, molestias necessitatibus placeat nulla blanditiis tempora possimus optio, sequi molestiae
+                deserunt eum sint quibusdam?
+            </p>
+
+            <button class="btn btn-nosotros">Contactanos</button>
+        </div>
+    </section>
+>>>>>>> d2c56ff01638a6ba57b4cdd8dcfee3ebd30bcfc8
 
 
+    <footer class="footer">
+        <div class="footer-social">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook footer-icon"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram footer-icon"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter footer-icon"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube footer-icon"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <div>
+                <input type="text" placeholder="Dejanos tu Email" type="email">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </footer>
 
     <!-- script -->
-    <script>
-        function verMenu() {
-            let menu = document.getElementById("menubar");
-            if (menu.style.transform === "scale(0)") {
-                menu.style.transform = "scale(1)";
-            } else {
-                menu.style.transform = "scale(0)";
-            }
-        }
-    </script>
+    <script src="src/js/main.js"></script>
 </body>
 
 </html>
