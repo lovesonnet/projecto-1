@@ -564,4 +564,8 @@ nav .container ul li a:hover {
         padding: 7px;
         font-family: 'roboto', sans-serif;
     }
+    .nav-responsive ul li a:hover{
+        opacity:8;
+        color: rgb(136, 136, 136);
+    }
 }
